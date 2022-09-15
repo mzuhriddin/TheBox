@@ -171,10 +171,12 @@ body {
 
 .back {
     margin-left: 10px;
+    color: white;
 }
 
 .next {
     margin-right: 10px;
+    color: white;
 }
 
 .back-button {
@@ -622,4 +624,133 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/*PROJECTS*/
+
+.projects {
+    padding-top: 88px;
+    padding-bottom: 138px;
+}
+
+.projects h4 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #292E3D;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.projects ul {
+    list-style: none;
+    margin: 0;
+}
+
+.project-types {
+    padding: 0;
+}
+
+.project-type {
+    margin-bottom: 20px;
+}
+
+.project-type a {
+    text-decoration: none;
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #C2C7D6;
+    transition: color 0.4s ease;
+}
+
+.project-type a:active {
+    border-left: 4px solid #2947A9;
+    color: #2947A9;
+}
+
+.project-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 32px;
+    padding: 0 0 32px 0;
+}
+
+.project-photo img {
+    margin-bottom: -4px;
+}
+
+.photo-info {
+    padding: 0;
+    margin: 0;
+    width: 384px;
+    height: 84px;
+    background-color: #2947A9;
+}
+
+.photo-info h5 {
+    margin: 0;
+    padding: 12px 0 12px 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.photo-info p {
+    margin: 0;
+    padding: 0 0 16px 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-next-button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 79px;
+    height: 64px;
+    padding-left: 108px;
+    padding-right: 108px;
+    background-color: #292E3D;
+}
+
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #F6F8F7;
+    border-radius: 50%;
+    transition: background-color 0.4s ease;
+}
+
+.dot:active {
+    background-color: #2947A9;
 }
