@@ -242,17 +242,25 @@
 
     <section class="contact-form">
         <h4>What can us do for you?</h4>
-        <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+        <p class="contact-form-paragraph">We are ready to work on a project of any complexity, whether it’s commercial
+            or residential.</p>
         <form>
-            <input type="text" placeholder="Your Name*" required>
-            <input type="email" placeholder="Email*" required>
-            <select>
-                <option value="" disabled selected>Reason for Contacting</option>
-            </select>
-            <input type="number" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            <p>* indicates a required field</p>
-            <button>Submit</button>
+            <div class="form-elements">
+                <input class="input name" type="text" placeholder="Your Name*" required>
+                <input class="input email" type="email" placeholder="Email*" required>
+                <div class="select">
+                    <select class="input">
+                        <option class="contact-reason" value="" disabled selected>Reason for Contacting*</option>
+                    </select>
+                    <img src="img/select-icon.svg" alt="" width="17" height="17">
+                </div>
+                <input class="input phone" type="tel" placeholder="Phone">
+                <textarea class="input message" placeholder="Message"></textarea>
+            </div>
+            <p class="star">* indicates a required field</p>
+            <div class="submit-button">
+                <button class="submit">Submit</button>
+            </div>
         </form>
     </section>
 

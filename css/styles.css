@@ -4,6 +4,12 @@
     --text-font: "Work Sans", "Arial", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -734,7 +740,6 @@ body {
     background-color: #292E3D;
 }
 
-
 .dots {
     display: flex;
     flex-direction: row;
@@ -754,3 +759,102 @@ body {
 .dot:active {
     background-color: #2947A9;
 }
+
+/*CONTACT-FORM*/
+
+.contact-form {
+    padding: 60px 424px 61px 424px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form h4 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #292E3D;
+}
+
+.contact-form-paragraph {
+    margin: 0 0 38px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #292E3D;
+}
+.form-elements {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.input {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+    height: 41px;
+    width: 280px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A3AAC2;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+select {
+    appearance: none;
+}
+
+.select{
+    position: relative;
+    height: 41px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.select img{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+.message {
+    padding-top: 10px;
+    width: 592px;
+    height: 135px;
+    margin-bottom: 8px;
+}
+
+.star{
+    margin: 0 0 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #667299;
+}
+.submit-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    background: #2947A9;
+    border: 1px transparent;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 16px 20px;
+    height: 53px;
+    width: 271px;
+}
+
