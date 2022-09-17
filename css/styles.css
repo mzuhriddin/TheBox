@@ -847,6 +847,9 @@ select {
     line-height: 19px;
     color: #667299;
 }
+.star span{
+    color: #C40303;
+}
 
 .submit-button {
     width: 100%;
