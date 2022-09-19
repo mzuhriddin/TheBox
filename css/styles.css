@@ -118,6 +118,10 @@ body ul {
     background-image: url("../img/Hero.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .hero h1 {
@@ -126,13 +130,13 @@ body ul {
     width: 556px;
     margin: 0;
     padding-top: 239px;
-    padding-left: 112px;
+    padding-left: calc(50% - 556px/2 - 330px);
 }
 
 .hero-feature {
     width: 416px;
     height: 190px;
-    margin-left: 1024px;
+    margin-left: calc(50% - 416px/2 + 512px);
     padding-top: -456px;
     background-color: #3559C7;
     border-radius: 2px 2px 0 0;
@@ -280,7 +284,7 @@ body ul {
     position: absolute;
     box-shadow: 0 20px 24px -4px rgba(17, 24, 39, 0.1), 0 8px 8px -4px rgba(17, 24, 39, 0.04);
     border-radius: 2px;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 calc(50% - 902px / 2 - 189px);
 }
 
 .about-us-content {
@@ -288,7 +292,7 @@ body ul {
     width: 488px;
     height: 523px;
     background-color: #2947A9;
-    left: 840px;
+    left: calc(50% - 488px/2 + 364px);
     top: 147px;
     box-shadow: 0 20px 24px -4px rgba(17, 24, 39, 0.1), 0 8px 8px -4px rgba(17, 24, 39, 0.04);
     border-radius: 2px;
@@ -459,7 +463,7 @@ body ul {
     position: absolute;
     width: 280px;
     height: 155px;
-    left: 512px;
+    left: calc(50% - 280px/2 - 68px);
     top: 122px;
 }
 
@@ -467,7 +471,7 @@ body ul {
     position: absolute;
     width: 97px;
     height: 97px;
-    left: 723px;
+    left: calc(50% - 97px/2 + 51.5px);
     top: 103px;
     z-index: 2;
 }
@@ -481,7 +485,7 @@ body ul {
     position: absolute;
     width: 361px;
     height: 155px;
-    left: 212px;
+    left: calc(50% - 361px/2 - 327.5px);
     top: 221px;
 }
 
@@ -489,7 +493,7 @@ body ul {
     position: absolute;
     width: 79px;
     height: 79px;
-    left: 179px;
+    left: calc(50% - 79px/2 - 501.5px);
     top: 172px;
     z-index: 2;
 }
@@ -504,7 +508,7 @@ body ul {
     position: absolute;
     width: 276px;
     height: 155px;
-    left: 458px;
+    left: calc(50% - 276px/2 - 124px);
     top: 364px;
 }
 
@@ -512,7 +516,7 @@ body ul {
     position: absolute;
     width: 93px;
     height: 93px;
-    left: 662px;
+    left: calc(50% - 93px/2 - 11.5px);
     top: 349px;
     z-index: 2;
 }
@@ -526,7 +530,7 @@ body ul {
     position: absolute;
     width: 333px;
     height: 155px;
-    left: 261px;
+    left: calc(50% - 333px/2 - 292.5px);
     top: 469px;
 }
 
@@ -534,7 +538,7 @@ body ul {
     position: absolute;
     width: 84px;
     height: 84px;
-    left: 549px;
+    left: calc(50% - 84px/2 - 129px);
     top: 582px;
     z-index: 2;
 }
@@ -542,7 +546,7 @@ body ul {
 .stat-content {
     position: absolute;
     top: 172px;
-    left: 944px;
+    left: calc(50% - 359px/2 + 403.5px);
     width: 359px;
 }
 
@@ -590,7 +594,11 @@ body ul {
     background-image: url("../img/ads.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
-    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
     padding: 100px 0 100px 0;
 }
 
@@ -992,3 +1000,29 @@ footer p {
     margin: 26px 0 25px 0;
     padding-left: 112px;
 }
+
+@media (min-width:1441px) {
+    .service-item{
+        margin: 0;
+    }
+    .services ul{
+        column-gap: 99px;
+    }
+
+    .form-elements{
+        width: 592px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+
+}
+@media (min-width:425px) and (max-width:767px){
+
+}
+@media (min-width:375px) and (max-width:424px){
+
+}
+@media (min-width:320px) and (max-width:374px){
+
+}
+
