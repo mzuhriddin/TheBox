@@ -1140,7 +1140,124 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 567px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        padding-left: 76px;
+    }
+
+    .hero-feature {
+        position: absolute;
+        right: 0;
+        top: 377px;
+    }
+
+    .about-us img {
+        -webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.7); /* FF3.5+ */
+        -ms-transform: scale(0.7); /* IE9 */
+        -o-transform: scale(0.7); /* Opera 10.5+ */
+        transform: scale(0.7);
+    }
+
+    .about-us-content {
+        -webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.7); /* FF3.5+ */
+        -ms-transform: scale(0.7); /* IE9 */
+        -o-transform: scale(0.7); /* Opera 10.5+ */
+        transform: scale(0.7);
+        left: 600px;
+    }
+
+    .about-us {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .serv-item {
+        margin: 0;
+    }
+
+    .services ul {
+        row-gap: 48px;
+        column-gap: 80px;
+    }
+
+    .stats {
+        -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.8); /* FF3.5+ */
+        -ms-transform: scale(0.8); /* IE9 */
+        -o-transform: scale(0.8); /* Opera 10.5+ */
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+    .ads {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .ads h4 {
+        font-size: 25px;
+    }
+
+    .ads p {
+        font-size: 18px;
+    }
+
+    .ads p > a {
+        font-size: 18px;
+    }
+
+    .ads-contact {
+        width: 200px;
+        height: 40px;
+        right: 140px;
+        top: 85px;
+        font-size: 14px;
+    }
+
+    .projects {
+        -webkit-transform: scale(0.95); /* Saf3.1+, Chrome */
+        -moz-transform: scale(0.95); /* FF3.5+ */
+        -ms-transform: scale(0.95); /* IE9 */
+        -o-transform: scale(0.95); /* Opera 10.5+ */
+        transform: scale(0.95);
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 60px 0 60px 0;
+        margin: 0 auto;
+    }
+
+    .contact-form h4 {
+        font-size: 25px;
+    }
+
+    .contact-form-paragraph {
+        font-size: 18px;
+
+    }
+
+    footer p {
+        padding-left: 26px;
+
+    }
 
 }
 
