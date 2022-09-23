@@ -1059,6 +1059,9 @@ footer p {
 
 @media (min-width: 1440px) {
 
+    .reason-item p{
+        width: 285px;
+    }
     .service-item {
         margin: 0;
     }
@@ -1710,7 +1713,7 @@ footer p {
     }
 
     .site-header {
-        padding: 0;
+        padding: 5px 0;
     }
 
     .logo-link {
@@ -2311,7 +2314,7 @@ footer p {
     }
 
     .site-header {
-        padding: 0;
+        padding: 5px  0;
     }
 
     .logo-link {
@@ -2909,7 +2912,7 @@ footer p {
 
 
     .site-header {
-        padding: 0;
+        padding: 5px 0;
     }
 
     .logo-link {
