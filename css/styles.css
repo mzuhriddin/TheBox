@@ -23,6 +23,7 @@ body {
 .body-container {
     display: flex;
     flex-direction: column;
+    transition: opacity 0.4s ease;
 }
 
 body ul {
@@ -845,6 +846,11 @@ select {
     margin-bottom: 20px;
 }
 
+select.input {
+    position: absolute;
+    top: 0;
+}
+
 .select img {
     position: absolute;
     top: 12px;
@@ -1012,12 +1018,21 @@ footer p {
 }
 
 .hamburger {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     width: 150px;
     height: 100vh;
     background-color: gray;
+}
+
+.x-mark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    color: black;
 }
 
 @keyframes show {
@@ -1038,6 +1053,10 @@ footer p {
     }
 }
 
+#drop-down {
+    padding-left: 20px;
+}
+
 @media (min-width: 1440px) {
 
     .service-item {
@@ -1056,7 +1075,7 @@ footer p {
 @media (min-width: 1024px) and (max-width: 1439px) {
     .container {
         width: 100%;
-        max-width: 1100px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1162,6 +1181,7 @@ footer p {
 
     .contact-form h4 {
         font-size: 25px;
+        line-height: 28px;
     }
 
     .contact-form-paragraph {
@@ -1178,7 +1198,7 @@ footer p {
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
         width: 100%;
-        max-width: 800px;
+        max-width: 750px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1190,12 +1210,14 @@ footer p {
     .hero-container {
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 36px;
+        width: 400px;
         padding-left: 40px;
+        padding-top: 140px;
     }
 
     .hero-feature {
@@ -1506,7 +1528,7 @@ footer p {
     .project-photos {
         width: 532px;
         gap: 32px;
-        padding: 0 0 25px 0;
+        padding: 0 0 20px 0;
     }
 
     .project-photo img {
@@ -1538,6 +1560,11 @@ footer p {
         padding-right: 60px;
     }
 
+    .back-next-button-1 img {
+        width: 18px;
+        height: 15px;
+    }
+
     .dots {
         width: 120px;
     }
@@ -1555,6 +1582,7 @@ footer p {
 
     .contact-form h4 {
         font-size: 20px;
+        line-height: 22px;
     }
 
     .contact-form-paragraph {
@@ -1674,6 +1702,612 @@ footer p {
 
 @media (min-width: 425px) and (max-width: 767px) {
 
+    .container {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-header {
+        padding: 0;
+    }
+
+    .logo-link {
+        height: 30px;
+    }
+
+    .logo {
+        height: 29px;
+        width: 20px;
+    }
+
+    .logo-name {
+        height: 25px;
+        width: 75px;
+    }
+
+    .site-nav-link {
+        color: white;
+    }
+
+    .site-nav-contact {
+        color: #F9995D;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .site-header-actions {
+        position: relative;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        top: -10px;
+    }
+
+    .site-nav-link {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .hero-container {
+        position: relative;
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+        width: 200px;
+        padding-left: 50px;
+        padding-top: 90px;
+    }
+
+    .hero-feature {
+        width: 180px;
+        height: 83px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .hero-feature-content {
+        height: 65px;
+    }
+
+    .hero-feature-content h5 {
+        font-size: 10px;
+        line-height: 14px;
+        margin: 10px 0;
+        width: 90px;
+    }
+
+    .hero-feature-content p {
+        font-size: 10px;
+        line-height: 12px;
+        margin: 0 0 13px;
+    }
+
+    .button {
+        height: 18px;
+    }
+
+    .back-next-button {
+        height: 18px;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .back-next-button img {
+        width: 12px;
+        height: 8px;
+    }
+
+    .back {
+        font-size: 9px;
+        margin: 0 0 0 5px;
+    }
+
+    .next {
+        font-size: 9px;
+        margin: 0 5px 0 0;
+    }
+
+    .reasons {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .reasons h4 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+
+    .reasons ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reason-item {
+        padding: 15px 10px 15px 10px;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .reason-item img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .reason-item h5 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .reason-item p {
+        font-size: 9px;
+        line-height: 11px;
+        width: 140px;
+    }
+
+    .about-us {
+        margin: 0 auto;
+        max-width: 425px;
+        height: 300px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .about-us img {
+        margin: 0;
+        width: 260px;
+        height: 220px;
+        left: 35px;
+    }
+
+    .about-us-content {
+        width: 150px;
+        height: 170px;
+        top: 70px;
+        left: calc(100% - 170px);
+    }
+
+    .about-us-content h4 {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 20px 0 10px 15px;
+        width: 70px;
+    }
+
+    .about-us-content p {
+        width: 120px;
+        margin: 0 0 10px 15px;
+        font-size: 6px;
+        line-height: 9px;
+    }
+
+    .about-us-content a {
+        padding: 4px 6px;
+        font-size: 6px;
+        line-height: 9px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .services {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services h4 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    .services ul {
+        column-gap: 30px;
+    }
+
+    .service-item {
+        margin: 0;
+        width: 220px;
+        height: 130px;
+        gap: 15px;
+    }
+
+    .service-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .service-item h6 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .stats {
+        height: 375px;
+    }
+
+    .stat div {
+        padding-bottom: 8px;
+
+    }
+
+    .stat h1 {
+        font-size: 24px;
+        line-height: 25px;
+        margin: 10px 0 1px 10px;
+        height: 28px;
+    }
+
+    .stat p {
+        padding: 0 0 0 8px;
+        margin: 0 0 0 10px;
+        font-size: 8px;
+        line-height: 10px;
+        border-left: 3px solid #F9995D;
+    }
+
+    .stat-1 div {
+        width: 110px;
+        height: 60px;
+        left: calc(50% - 110px / 2 - 30px);
+        top: 100px;
+    }
+
+    .stat-1 img {
+        width: 30px;
+        height: 30px;
+        left: 51%;
+        top: 85px;
+    }
+
+    .stat-2 div {
+        width: 120px;
+        height: 70px;
+        left: calc(50% - 120px / 2 - 120px);
+        top: 135px;
+    }
+
+    .stat-2 img {
+        width: 30px;
+        height: 30px;
+        left: 6%;
+        top: 127px;
+    }
+
+    .stat-3 div {
+        width: 110px;
+        height: 60px;
+        left: calc(50% - 110px / 2 - 50px);
+        top: 190px;
+    }
+
+    .stat-3 img {
+        width: 30px;
+        height: 30px;
+        left: calc(50% - 15px);
+        top: 225px;
+    }
+
+    .stat-4 div {
+        width: 120px;
+        height: 70px;
+        left: calc(50% - 120px / 2 - 105px);
+        top: 230px;
+    }
+
+    .stat-4 img {
+        width: 30px;
+        height: 30px;
+        left: calc(50% - 70px);
+        top: 280px;
+    }
+
+    .stat-content {
+        position: absolute;
+        top: 110px;
+        left: calc(50% + 60px);
+        width: 120px;
+    }
+
+    .stat-content h2 {
+        font-size: 20px;
+        line-height: 24px;
+        width: 100px;
+        margin: 0 0 15px 0;
+    }
+
+    .stat-content p {
+        width: 120px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 15px;
+    }
+
+    .stat-content a {
+        width: 70px;
+        height: 25px;
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .ads {
+        padding: 30px 0 30px 0;
+    }
+
+    .ads h4 {
+        margin: 0 0 10px 15px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .ads p {
+        margin: 0 0 0 15px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ads p > a {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ads-contact {
+        width: 100px;
+        height: 20px;
+        right: 20px;
+        border: 1px solid #FFFFFF;
+        top: 40px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .projects {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .project-wrapper {
+        justify-content: space-between;
+    }
+
+    .projects h4 {
+        font-size: 22px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+
+    .project-type {
+        margin-bottom: 8px;
+    }
+
+    .project-type a {
+        padding-left: 10px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .project-right-side {
+        width: 210px;
+    }
+
+    .project-photos {
+        width: 210px;
+        gap: 15px;
+        padding: 0 0 20px 0;
+    }
+
+    .project-photo img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .photo-info {
+        width: 150px;
+        height: 30px;
+    }
+
+    .photo-info h5 {
+        padding: 5px 0 3px 5px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .photo-info p {
+        padding: 0 0 0 5px;
+        font-size: 7px;
+        line-height: 9px;
+    }
+
+    .back-next-button-1 {
+        width: 35px;
+        height: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .back-next-button-1 img {
+        width: 10px;
+        height: 12px;
+    }
+
+    .dots {
+        width: 50px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .contact-form {
+        padding: 50px 0 50px 0;
+    }
+
+    .contact-form h4 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .contact-form-paragraph {
+        margin: 0 0 20px;
+        font-size: 14px;
+        line-height: 16px;
+        width: 240px;
+    }
+
+    .form-elements {
+        width: 300px;
+    }
+
+    .input {
+        height: 20px;
+        width: 130px;
+        font-size: 8px;
+        line-height: 10px;
+        padding-left: 6px;
+        margin-bottom: 15px;
+    }
+
+    .select {
+        height: 20px;
+        width: 130px;
+        margin-bottom: 15px;
+    }
+
+    .select img {
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        right: 6px;
+    }
+
+    .message {
+        padding-top: 6px;
+        width: 300px;
+        height: 80px;
+        margin-bottom: 2px;
+    }
+
+    .star {
+        margin: 0 0 15px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .submit-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit {
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        padding: 5px 20px;
+        height: 22px;
+        width: 83px;
+    }
+
+    .bottom {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bottom-left {
+        height: 105px;
+    }
+
+    .bottom-left p {
+        margin: 0 0 10px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .span {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .span-1 {
+        margin-right: 5px;
+    }
+
+    .span-2{
+        margin-right: 15px;
+    }
+
+    .span-3{
+        margin-right: 18px;
+    }
+
+    .label {
+        margin-bottom: 10px;
+    }
+
+    .subscribe {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-input button {
+        width: 45px;
+        height: 20px;
+        font-size: 6px;
+        line-height: 10px;
+    }
+
+    .social {
+        margin-bottom: 10px;
+    }
+
+    .social-list {
+        height: 20px;
+    }
+
+    .socials {
+        width: 20px;
+        height: 20px;
+    }
+
+    .socials img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        height: 40px;
+    }
+
+    footer p {
+        font-size: 10px;
+        line-height: 12px;
+        padding-top: 14px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .container {
+        width: 100%;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     .top-nav {
         display: none;
     }
@@ -1697,15 +2331,39 @@ footer p {
         display: block;
         text-align: left;
     }
-
-
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
+    .container {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+
+    .top-nav {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .site-header-actions {
+        position: relative;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .site-nav-link {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
