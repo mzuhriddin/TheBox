@@ -2310,13 +2310,34 @@ footer p {
         margin-right: auto;
     }
 
+    .site-header {
+        padding: 0;
+    }
+
+    .logo-link {
+        height: 30px;
+    }
+
+    .logo {
+        height: 29px;
+        width: 20px;
+    }
+
+    .logo-name {
+        height: 25px;
+        width: 75px;
+    }
+
+    .site-nav-link {
+        color: white;
+    }
+
+    .site-nav-contact {
+        color: #F9995D;
+    }
 
     .top-nav {
         display: none;
-    }
-
-    .icon {
-        display: block;
     }
 
     .site-header-actions {
@@ -2324,15 +2345,557 @@ footer p {
     }
 
     .icon {
+        display: block;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -10px;
     }
 
     .site-nav-link {
         float: none;
         display: block;
         text-align: left;
+    }
+
+    .hero-container {
+        position: relative;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 16px;
+        width: 200px;
+        padding-left: 35px;
+        padding-top: 70px;
+    }
+
+    .hero-feature {
+        width: 160px;
+        height: 68px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .hero-feature-content {
+        height: 52px;
+    }
+
+    .hero-feature-content h5 {
+        font-size: 8px;
+        line-height: 10px;
+        margin: 8px 0;
+        width: 65px;
+    }
+
+    .hero-feature-content p {
+        font-size: 8px;
+        line-height: 10px;
+        margin: 0 5px 13px;
+    }
+
+    .button {
+        height: 16px;
+    }
+
+    .back-next-button {
+        height: 16px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .back-next-button img {
+        width: 10px;
+        height: 8px;
+    }
+
+    .back {
+        font-size: 8px;
+        margin: 0 0 0 5px;
+    }
+
+    .next {
+        font-size: 8px;
+        margin: 0 5px 0 0;
+    }
+
+    .reasons {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .reasons h4 {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .reasons ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .reason-item {
+        padding: 14px 10px 14px 10px;
+        gap: 8px;
+        margin: 0;
+    }
+
+    .reason-item img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .reason-item h5 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .reason-item p {
+        font-size: 9px;
+        line-height: 11px;
+        width: 140px;
+    }
+
+    .about-us {
+        margin: 0 auto;
+        max-width: 375px;
+        height: 300px;
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+
+    .about-us img {
+        margin: 0;
+        width: 240px;
+        height: 200px;
+        left: 30px;
+    }
+
+    .about-us-content {
+        width: 140px;
+        height: 155px;
+        top: 60px;
+        left: calc(100% - 170px);
+    }
+
+    .about-us-content h4 {
+        font-size: 13px;
+        line-height: 15px;
+        margin: 15px 0 8px 12px;
+        width: 65px;
+    }
+
+    .about-us-content p {
+        width: 110px;
+        margin: 0 0 8px 12px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .about-us-content a {
+        padding: 4px 6px;
+        font-size: 6px;
+        line-height: 9px;
+        margin-left: 12px;
+        margin-bottom: 20px;
+    }
+
+    .services {
+        padding: 40px 0 60px;
+    }
+
+    .services h4 {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .services ul {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        row-gap: 20px;
+    }
+
+    .service-item {
+        margin: 0;
+        width: 200px;
+        height: 110px;
+        gap: 15px;
+    }
+
+    .service-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .service-item h6 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .stats {
+        height: 330px;
+    }
+
+    .stat div {
+        padding-bottom: 8px;
+
+    }
+
+    .stat h1 {
+        font-size: 24px;
+        line-height: 25px;
+        margin: 10px 0 1px 10px;
+        height: 28px;
+    }
+
+    .stat p {
+        padding: 0 0 0 8px;
+        margin: 0 0 0 10px;
+        font-size: 8px;
+        line-height: 10px;
+        border-left: 3px solid #F9995D;
+    }
+
+    .stat-1 div {
+        width: 110px;
+        height: 60px;
+        left: calc(50% - 110px / 2 - 30px);
+        top: 60px;
+    }
+
+    .stat-1 img {
+        width: 30px;
+        height: 30px;
+        left: 51%;
+        top: 45px;
+    }
+
+    .stat-2 div {
+        width: 120px;
+        height: 70px;
+        left: calc(50% - 120px / 2 - 110px);
+        top: 95px;
+    }
+
+    .stat-2 img {
+        width: 30px;
+        height: 30px;
+        left: 3%;
+        top: 85px;
+    }
+
+    .stat-3 div {
+        width: 110px;
+        height: 60px;
+        left: calc(50% - 110px / 2 - 40px);
+        top: 150px;
+    }
+
+    .stat-3 img {
+        width: 30px;
+        height: 30px;
+        left: calc(50% - 10px);
+        top: 185px;
+    }
+
+    .stat-4 div {
+        width: 120px;
+        height: 70px;
+        left: calc(50% - 120px / 2 - 100px);
+        top: 190px;
+    }
+
+    .stat-4 img {
+        width: 30px;
+        height: 30px;
+        left: calc(50% - 65px);
+        top: 235px;
+    }
+
+    .stat-content {
+        position: absolute;
+        top: 80px;
+        left: calc(50% + 60px);
+        width: 115px;
+    }
+
+    .stat-content h2 {
+        font-size: 18px;
+        line-height: 22px;
+        width: 100px;
+        margin: 0 0 15px 0;
+    }
+
+    .stat-content p {
+        width: 115px;
+        font-size: 9px;
+        line-height: 12px;
+        margin-bottom: 15px;
+    }
+
+    .stat-content a {
+        width: 65px;
+        height: 20px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .ads {
+        padding: 20px 0;
+    }
+
+    .ads h4 {
+        margin: 0 0 5px 10px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ads p {
+        margin: 0 0 0 10px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .ads p > a {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .ads-contact {
+        width: 80px;
+        height: 15px;
+        right: 15px;
+        border: 1px solid #FFFFFF;
+        top: 25px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .projects {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .project-wrapper {
+        justify-content: space-between;
+    }
+
+    .projects h4 {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 15px;
+    }
+
+    .project-type {
+        margin-bottom: 5px;
+    }
+
+    .project-type a {
+        padding-left: 8px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .project-right-side {
+        width: 200px;
+    }
+
+    .project-photos {
+        width: 200px;
+        gap: 10px;
+        padding: 0 0 15px 0;
+    }
+
+    .project-photo img {
+        width: 130px;
+        height: 100px;
+    }
+
+    .photo-info {
+        width: 130px;
+        height: 30px;
+    }
+
+    .photo-info h5 {
+        padding: 5px 0 3px 5px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .photo-info p {
+        padding: 0 0 0 5px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .back-next-button-1 {
+        width: 35px;
+        height: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .back-next-button-1 img {
+        width: 10px;
+        height: 8px;
+    }
+
+    .dots {
+        width: 50px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .contact-form {
+        padding: 40px 0;
+    }
+
+    .contact-form h4 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .contact-form-paragraph {
+        margin: 0 0 20px;
+        font-size: 12px;
+        line-height: 14px;
+        width: 210px;
+    }
+
+    .form-elements {
+        width: 250px;
+    }
+
+    .input {
+        height: 18px;
+        width: 120px;
+        font-size: 8px;
+        line-height: 10px;
+        padding-left: 6px;
+        margin-bottom: 15px;
+    }
+
+    .select {
+        height: 18px;
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .select img {
+        width: 10px;
+        height: 10px;
+        top: 4px;
+        right: 5px;
+    }
+
+    .message {
+        padding-top: 4px;
+        width: 250px;
+        height: 80px;
+        margin-bottom: 2px;
+    }
+
+    .star {
+        margin: 0 0 12px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .submit-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit {
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        padding: 5px 20px;
+        height: 20px;
+        width: 80px;
+    }
+
+    .bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bottom-left {
+        height: 85px;
+    }
+
+    .bottom-left p {
+        margin: 0 0 8px;
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .span {
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .span-1 {
+        margin-right: 5px;
+    }
+
+    .span-2 {
+        margin-right: 11px;
+    }
+
+    .span-3 {
+        margin-right: 14px;
+    }
+
+    .label {
+        margin-bottom: 8px;
+    }
+
+    .subscribe {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-input button {
+        width: 45px;
+        height: 18px;
+        font-size: 6px;
+        line-height: 10px;
+    }
+
+    .social {
+        margin-bottom: 8px;
+    }
+
+    .social-list {
+        height: 18px;
+    }
+
+    .socials {
+        width: 18px;
+        height: 18px;
+    }
+
+    .socials img {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer {
+        height: 30px;
+    }
+
+    footer p {
+        font-size: 9px;
+        line-height: 12px;
+        padding-top: 10px;
     }
 }
 
